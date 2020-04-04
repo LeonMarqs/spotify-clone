@@ -1,0 +1,348 @@
+/*
+* 
+* @author Leonanrdo Marques
+*/
+
+/* LAYOUT 
+************************/
+body, html, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    background: url('../img/capa.png'),
+                url('../img/ruido.png'),
+                linear-gradient(50deg,#ff4169, #7c26f8);
+    background-attachment: fixed;
+
+}
+
+/* Barra de navegação 
+************************/
+nav.navbar-transparent {
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #1db954;
+}
+
+header ul li a {
+    font-weight: 700;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+/* Capa */
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    width: 300px;
+    color: white;
+
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+
+    text-transform: uppercase;
+
+    transition: background 0.4s, color 0.4s;
+    -webkit-transition: background 0.4s, color 0.4s;
+    -moz-transition: background 0.4s, color 0.4s;
+    -ms-transition: background 0.4s, color 0.4s;
+    -o-transition: background 0.4s, color 0.4s;
+
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+
+.btn-black {
+    background: #191414;
+}
+
+.btn-black:hover {
+    background: rgb(77, 77, 77);
+    color: #ffffff;
+}
+
+.btn-white {
+    border: 2px solid white;
+}
+
+.btn-white:hover {
+    background: #ffffff;
+    color: #191414;
+}
+
+/* Content */
+.box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#services {
+    background: white;
+}
+
+#services h2, h3 {
+    color: #7c25f8;
+}
+
+
+#resources p {
+    color: white;
+    font-weight: 700;
+}
+
+#resources h3 {
+    color: #9bf0e1;
+}
+
+#resources h2{
+    color: white;
+}
+
+
+.albums {
+    padding: 10px 0;
+}
+
+.rotation {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+
+    padding-left: 80px;
+}
+
+
+/* Footer */
+footer {
+    background: #191414;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+footer h4 {
+    font-size: 12px;
+    color: #919496;
+    line-height: 16.8px;
+    vertical-align: baseline;
+    letter-spacing: 0.96px;
+
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: rgb(145, 148, 150);
+    text-align: start;
+}
+
+footer .navbar-nav a {
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+footer .navbar-nav a:hover {
+    color: #1DB954;
+    text-decoration: none;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+/* FONTS */
+
+
+
+#home h1 {
+   font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
+
+   line-height: 73.6px;
+   vertical-align: baseline;
+   letter-spacing: -2.56px;
+   word-spacing: 0px;
+
+   font-weight: 900;
+   color: white;
+   text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.borda {
+    border: 1px solid red
+}
+
+
+
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) { 
+    h1 {
+        font-size:2.7em;
+    }
+
+    .btn-purple {
+        margin-top: 0;
+    }
+
+    
+ }
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1 {
+        font-size: 3em;
+    }
+
+    
+    
+
+ }
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1 {
+        font-size: 4em;
+
+    }
+
+    #resources .row .col-md-8 .row {
+        margin-top: 125px;
+    }
+
+    footer .social {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: start;
+    }
+
+    footer .social img {
+        width: 30px;
+    }
+
+ }
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h1 {
+        font-size: 5em;
+    }
+ }
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) { 
+    h1 {
+        font-size: 6em;
+    }
+ }
+
+/* Breakpoints - medium devices */
+
+@media (max-width: 767.98px) { 
+
+    header .navbar-brand img {
+        width: 100px;
+        margin-left: 1rem;
+    }
+    
+    nav.navbar-mobile {
+        padding: 6px;
+        background: #191414;
+    }
+
+    header button.navbar-toggler {
+        align-self: center;
+        margin-right: 1rem;
+    }
+
+    header button.navbar-toggler:hover {
+        outline: none;
+    }
+
+    header button.btn{
+        margin-bottom: 5px;
+
+    }
+    
+
+    header ul li a {
+        margin-left: 1.5rem;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: white;
+        border: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #1db954;
+    }
+
+    footer .col-md-2 {
+        margin-top: 10px;
+    }
+
+    footer .col-md-2 img {
+        width: 100px;
+        padding-bottom: 15px;
+    }
+
+    footer .social img {
+        margin-top: 15px;
+        width: 30px;
+    }
+
+
+ }
+
