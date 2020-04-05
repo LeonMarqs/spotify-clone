@@ -1,0 +1,130 @@
+/*
+* 
+* @author Leonardo Marques
+*/
+
+/* LAYOUT 
+************************/
+body {
+    box-sizing: border-box;
+}
+
+/* Header */
+.brand {
+    margin-top: 15px;
+}
+
+.black {
+    background-color: black;
+}
+
+
+header {
+    background: #495057;
+    border-bottom: 1px solid #00000044
+}
+
+header .container{
+    margin-bottom: 15px;
+    
+
+}
+
+/* Buttons */
+
+button {
+
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.btn-blue /*arrumar*/ {
+   background: #3b5998;
+}
+
+.btn-custom {
+
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+}
+
+.btn-text {
+
+    font-weight: 600;
+    letter-spacing: 1.7px;
+}
+
+/* Input */ 
+
+.checkbox-text {
+    text-align: start;
+}
+
+.checkbox-text a {
+    text-decoration: none;
+    color: rgb(13, 196, 13);
+}
+
+/* Form */
+
+fieldset {
+    text-align: center;
+	border-top: 1px solid  #0000003d;
+
+}
+
+legend {
+    font-size: 1.2em;
+    text-align: center;
+    width: auto;
+    line-height: 0;
+}
+
+.legend-text {
+    color: #495057;
+    font-family: inherit;
+    text-align: start;
+    margin: 0;
+}
+
+p {
+    color: #495057; 
+}
+
+
+
+h4 {
+
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.account h4 {
+    padding-top: 0.50rem;
+    text-align: center;
+    font-size: 1em;
+}
+
+.account h4 a {
+    text-decoration: none;
+    color: rgb(13, 196, 13);;
+}
+
+/* breakpoints */
+
+@media (min-width: 992px) {
+    button {
+        width: 50%;
+    }
+ }
+
+@media (max-width: 767.98px) {
+    button {
+    }
+    .btn-text {
+        width:70%; 
+    }
+}
