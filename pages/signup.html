@@ -21,7 +21,7 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="../css/signup.css">
 
-    <title>Cadastrar - Spotify</title>
+    <title>Inscrever-se - Spotify</title>
     <link rel="icon" href="../img/favicon.png">
   </head>
 
@@ -30,8 +30,7 @@
     <header> <!-- Header -->
       <div class="container d-flex justify-content-center">
 
-        <a href="index.html" class="brand">
-          <img src="../img/spotify.svg" width="150" alt="Logo" class="img-fluid">
+        <a href="index.html" class="brand spotify-logo">
       </a>
 
       </div>
@@ -44,12 +43,14 @@
       </button> 
 
       <div class="mt-2 d-flex flex-row align-items-baseline">
-        <input type="checkbox" class="mr-1">
-        <p class="checkbox-text">Eu aceito os 
-          <a href="">Termos e condições</a>
-          e a 
-          <a href="">Política de privacidade do Spotify</a>
-        </p>
+        <input id="term" type="checkbox" class="mr-1">
+        <label for="term">
+          <p class="checkbox-text">Eu aceito os 
+            <a href="">Termos e condições</a>
+            e a 
+            <a href="">Política de privacidade do Spotify</a>
+          </p>
+        </label>
       </div>
 
       <form> <!-- Form -->
@@ -63,19 +64,19 @@
         <h4>Inscrever-se com seu endereço de e-mail</h4>
   
         <div class="form-group">
-          <input class="form-control form-control" type="text" name="email" id="email" placeholder="E-mail">
+          <input autofocus class="form-control form-control" type="text" name="email" id="email" placeholder="E-mail" required="required">
         </div>
   
         <div class="form-group">
-          <input class="form-control form-control" type="text" id="confirm" placeholder="Confirmar e-mail">
+          <input class="form-control form-control" type="text" id="confirm" placeholder="Confirmar e-mail" required="required">
         </div>
   
         <div class="form-group">
-          <input class="form-control form-control" type="password" id="senha" placeholder="Senha">
+          <input class="form-control form-control" type="password" id="senha" placeholder="Senha" required="required">
         </div>
 
         <div class="form-group">
-          <input class="form-control form-control" type="text" id="name" placeholder="Como devemos chamar você?">
+          <input class="form-control form-control" type="text" id="name" placeholder="Como devemos chamar você?" required="required">
         </div>
 
         <div class="row"> <!-- Birthday -->
@@ -86,7 +87,7 @@
           <div class="form-group col-md-3">
 
             <div>
-            <input class="form-control form-control" type="number" id="day" placeholder="Dia" min="1" max="31">
+            <input class="form-control form-control" type="number" id="day" placeholder="Dia" min="1" max="31" required="required">
             </div>
 
           </div>
@@ -94,8 +95,8 @@
           <div class="form-group col-md-6">
 
             <div>
-              <select class="form-control" id="months">
-                <option>Mês</option>
+              <select class="form-control" id="months" required="required">
+                <option value="selected">Mês</option>
                 <option>Janeiro</option>
                 <option>Fevereiro</option>
                 <option>Março</option>
@@ -116,7 +117,7 @@
           <div class="form-group col-md-3">
 
             <div>
-              <input class="form-control" type="number" id="year" placeholder="Ano" min="1900" max="2020">
+              <input class="form-control" type="number" id="year" placeholder="Ano" min="1900" max="2020" required="required">
             </div>
 
           </div>
@@ -126,33 +127,40 @@
         <div class="row"> <!-- Gender-->
 
           <div class="form-group ml-3">
-            <input type="radio" name="sexo" value="masc"> Masculino
+            <input id="masc" type="radio" name="sexo" value="masc" required="required">
+            <label for="masc">Masculino</label>
           </div>
 
           <div class="form-group ml-3">
-            <input type="radio" name="sexo" value="fem"> Feminino
+            <input id="fem" type="radio" name="sexo" value="fem" required="required">
+            <label for="fem">Feminino</label>
           </div>
 
           <div class="form-group ml-3">
-            <input type="radio" name="sexo" value="nbin"> Não binário
+            <input id="nbin" type="radio" name="sexo" value="nbin" required="required">
+            <label for="nbin">Não binário</label>
           </div>
         </div> <!-- /Gender -->
     
         <div class="d-flex flex-row align-items-baseline justify-content-start">
-          <input type="checkbox" class="mr-1">
-          <p class="checkbox-text">
+          <input id="comp" type="checkbox" class="mr-1">
+          <label for="comp">
+            <p class="checkbox-text">
             Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.
-          </p>
+            </p>
+          </label>
         </div>
         
         <div class="d-flex align-items-baseline justify-content-start">
-          <input type="checkbox" class="mr-1">
-          <p class="checkbox-text">Eu aceito os 
-            <a href="">Termos e condições</a>
-            e a 
-            <a href="">Política de privacidade do Spotify</a>
-            .
-          </p>
+          <input id="term2" type="checkbox" class="mr-1" required="required">
+          <label for="term2">
+            <p class="checkbox-text">Eu aceito os 
+              <a href="">Termos e condições</a>
+              e a 
+              <a href="">Política de privacidade do Spotify</a>
+              
+            </p>
+          </label>
         </div>
 
         
@@ -171,16 +179,8 @@
         </h4>
       </div>
     
-    
-
     </div>
-
-      
-
-
-
-    
-
+    <br><br>
 
 
     <!-- JavaScript (Opcional) -->

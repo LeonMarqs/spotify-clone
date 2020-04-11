@@ -23,7 +23,7 @@ body {
 /* Barra de navegação 
 ************************/
 nav.navbar-transparent {
-    padding: 15px 0px;
+    padding: 10px 0px;
     background: rgba(0, 0, 0, 0.8);
 }
 
@@ -33,6 +33,10 @@ nav.navbar-transparent {
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: #1db954;
+}
+
+.nav-item {
+    margin-right: 15px;
 }
 
 header ul li a {
@@ -80,7 +84,7 @@ header ul li a {
 }
 
 .btn-black {
-    background: #191414;
+    background: #000;
 }
 
 .btn-black:hover {
@@ -94,7 +98,7 @@ header ul li a {
 
 .btn-white:hover {
     background: #ffffff;
-    color: #191414;
+    color: #000;
 }
 
 /* Content */
@@ -142,7 +146,7 @@ header ul li a {
 
 /* Footer */
 footer {
-    background: #191414;
+    background: #000;
     padding: 50px 0 20px 0;
     position: relative;
 }
@@ -184,14 +188,7 @@ footer ul li{
     padding-right: 10px;
 }
 
-
-
-
-
-
 /* FONTS */
-
-
 
 #home h1 {
    font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
@@ -222,8 +219,18 @@ h3 {
     border: 1px solid red
 }
 
+.title {
+    text-align: center;
+}
 
-
+.title::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: currentColor;
+    margin: 20px auto;
+}
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 @media (max-width: 575.98px) { 
@@ -234,7 +241,6 @@ h3 {
     .btn-purple {
         margin-top: 0;
     }
-
     
  }
 
@@ -243,13 +249,10 @@ h3 {
     h1 {
         font-size: 3em;
     }
-
-    
-    
-
  }
 
 /* Dispositivos médios (tablets com 768px ou mais) */
+
 @media (min-width: 768px) and (max-width: 991.98px) { 
     h1 {
         font-size: 4em;
@@ -291,6 +294,8 @@ h3 {
 
 @media (max-width: 767.98px) { 
 
+    /* header */
+
     header .navbar-brand img {
         width: 100px;
         margin-left: 1rem;
@@ -298,7 +303,7 @@ h3 {
     
     nav.navbar-mobile {
         padding: 6px;
-        background: #191414;
+        background: #000;
     }
 
     header button.navbar-toggler {
@@ -329,6 +334,8 @@ h3 {
         color: #1db954;
     }
 
+    /* foooter */
+
     footer .col-md-2 {
         margin-top: 10px;
     }
@@ -343,6 +350,10 @@ h3 {
         width: 30px;
     }
 
-
+    /* Carousel */
+    .carousel-inner .carousel-item a{
+        font-size: 16px;
+        width: 60%;
+     
+    }
  }
-

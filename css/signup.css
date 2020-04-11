@@ -5,7 +5,8 @@
 
 /* LAYOUT 
 ************************/
-body {
+
+* {
     box-sizing: border-box;
 }
 
@@ -18,6 +19,12 @@ body {
     background-color: black;
 }
 
+.spotify-logo {
+    background: url(/i/_global/logos/spotify-logo-lockup-197@2x.png) transparent no-repeat center center;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+}
 
 header {
     background: #495057;
@@ -27,7 +34,6 @@ header {
 header .container{
     margin-bottom: 15px;
     
-
 }
 
 /* Buttons */
@@ -43,7 +49,6 @@ button {
 }
 
 .btn-custom {
-
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
@@ -59,14 +64,24 @@ button {
 
 /* Input */ 
 
+.form-control {
+    height: 50px;
+}
+
 .checkbox-text {
     text-align: start;
 }
 
 .checkbox-text a {
     text-decoration: none;
-    color: rgb(13, 196, 13);
+    color: #1DB954;
 }
+
+.checkbox-text a:hover {
+    color: #1ED760;
+    text-decoration: none;
+}
+
 
 /* Form */
 
@@ -94,8 +109,6 @@ p {
     color: #495057; 
 }
 
-
-
 h4 {
 
     font-weight: 600;
@@ -110,7 +123,12 @@ h4 {
 
 .account h4 a {
     text-decoration: none;
-    color: rgb(13, 196, 13);;
+    color: #1DB954;
+}
+
+.account h4 a:hover {
+    color: #1ED760;
+    text-decoration: none;
 }
 
 /* breakpoints */
@@ -121,10 +139,8 @@ h4 {
     }
  }
 
-@media (max-width: 767.98px) {
-    button {
-    }
-    .btn-text {
-        width:70%; 
+@media (min-width: 768px) {
+    .container {
+        width: 540px;
     }
 }
